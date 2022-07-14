@@ -1,0 +1,25 @@
+{
+  "trace_key": "trace-id",
+  "system": {
+    "timeout": "5s"
+  },
+  "log": {
+    "level": 0,
+    "debug":true,
+    "output_console": true,
+    "output_file":false,
+    "filename": "./logs/log.log",
+    "max_size":10,
+    "max_backups": 30,
+    "max_age":7,
+    "compress": true
+  },
+  "http_tool":{
+    "retry_count": 3,
+    "retry_wait_time":0.1,
+    "timeout": 10,
+    "enable_log": true,
+    "request_msg": "http request info",
+    "response_msg": "http response res"
+  }
+}
